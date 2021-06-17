@@ -26,7 +26,7 @@ urlpatterns = [
     path('lit/', include('lit.urls')),
 ]
 
-
+# manually added for admin panel
 
 admin.site.site_header = 'RabiRaRaga Admin Panel'                    # default: "Django Administration"
 admin.site.index_title = 'Admin'                 # default: "Site administration"
