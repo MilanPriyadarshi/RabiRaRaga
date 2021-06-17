@@ -25,3 +25,9 @@ urlpatterns = [
     path('photo/', include('photo.urls')),
     path('lit/', include('lit.urls')),
 ]
+
+
+
+admin.site.site_header = 'RabiRaRaga Admin Panel'                    # default: "Django Administration"
+admin.site.index_title = 'Admin'                 # default: "Site administration"
+admin.site.site_title = 'Welcome to the admin panel of RabiRaRaga' # default: "Django site admin"
