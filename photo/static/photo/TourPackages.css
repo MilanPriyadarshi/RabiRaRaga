@@ -1,0 +1,168 @@
+.Heading-Section h3{
+    margin-top: 60px;
+    font-size: 35px;
+    margin-bottom: .5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    font-family: gabriola;
+    
+}
+.Heading-Section h3:after {
+    content: '';
+    width: 70px;
+    height: 3px;
+    background: #f84525;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+.H_content p{
+    font-size: 1em;
+    color: rgb(103, 103, 103);
+    height: 100%;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 35px;
+}
+.Service{
+    padding-bottom: 10px;
+}
+.single-box{
+    padding-bottom: 270px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px #000;
+}
+.box-img{
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    display: flex;
+}
+.box-img img{
+    width: 100%;
+    transition: .3s;
+}
+.single-box:hover .box-img img{
+    transform: scale(1.1);
+}
+.box-content{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    transition: .4s;
+    height: 270px;
+    background: #343a40;
+}
+.single-box .upper-info h4{
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: big john;
+    font-size: 17px;
+    margin-top: 10px;
+    color: crimson;
+}
+.upper-info .duration{
+    display: block;
+    margin-bottom: 100px;
+    color: #aaa;
+    font-weight: 500;
+}
+.upper-info .pkgdetail{
+    margin-bottom: 0px;
+}
+.upper-info .pkgdetail p{
+    font-size: 20px;
+    line-height: 100%;
+    color: #d6d6d6;
+}
+.pkgdetail span{
+    font-size: 17px;
+    font-family: Bodoni MT;
+    color: #babdc0;
+}
+.pkgdetail p>label{
+
+    display: block;
+    font-family: gabriola;
+    color: #1e508b;
+    font-weight: bold;
+    font-size: 1em;
+}
+.lower-info{
+    position: absolute;
+    bottom: 10px;
+}
+.lower-info .btn-all{
+    position: relative;
+    padding: 6px 17px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    border: 0.5px solid #f6461d;
+    background: #202327;
+}
+.modal {
+    display: none; /* Hidden by default */
+    z-index: 10; /* Sit on top */
+    padding-top: 55px; /* Location of the box */
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  .modal .modal-inner {
+    margin: auto;
+    background-color: #fefefe;
+    border: 1px solid #888;
+    width: 37%;
+  }
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 7px;
+  }
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-head h4{
+    float: left;
+    font-weight: 500;
+    color: rgb(88, 87, 87);
+}
+.modal-content{
+    padding: 25px 25px 0px 25px;
+  }
+.prepend-icon input{
+    margin-top: 15px;
+    height: 40px;
+    padding-left: 40px;
+  }
+.prepend-icon i{
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 15px;
+}
+.modal-content button{
+    padding: 3px 12px;
+    font-size: 18px;
+    color: #fff;
+    background: #0397fa;
+    border: none;
+}
+.modal-content button:focus{
+    outline: none;
+    opacity: 0.8;
+}

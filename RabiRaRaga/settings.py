@@ -38,9 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home.apps.HomeConfig',
-    'news',
-    'state',
-    'country',
+    'news.apps.NewsConfig',
     'photo',
     'lit',
 ]
