@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'home.apps.HomeConfig',
     'news.apps.NewsConfig',
-    'photo',
+    'photo.apps.PhotoConfig',
     'lit',
 ]
 
