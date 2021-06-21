@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'home.apps.HomeConfig',
     'news.apps.NewsConfig',
     'photo.apps.PhotoConfig',
-    'lit',
+    'lit.apps.LitConfig',
 ]
 
 MIDDLEWARE = [
