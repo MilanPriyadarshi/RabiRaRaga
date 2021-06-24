@@ -11,6 +11,5 @@ def news(request):
 #     return render(request,"news/newsPost.html")
 def newsPost(request,slug):
     post=Post.objects.filter(slug=slug).first()
-    post.save()
     context={'post':post}
     return render(request,'news/newsPost.html',context)
