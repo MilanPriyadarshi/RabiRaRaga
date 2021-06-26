@@ -1,9 +1,13 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from home.models import Contact
+from news.models import Post
+from lit.models import Sahitya
 # Create your views here.
 def home(request):
-    return render(request,"home/index.html")
+    post=Post.objects.order_by('sno')[:4]
+    context={'post':post}
+    return render(request,"home/index.html",context)
 def contact(request):
     if request.method =='POST':
         name=request.POST['name']
