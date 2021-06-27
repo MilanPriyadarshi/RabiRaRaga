@@ -1,0 +1,1 @@
+web: gunicorn RabiRaRaga.wsgi --log-file -
