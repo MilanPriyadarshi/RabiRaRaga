@@ -27,3 +27,12 @@ def contact(request):
 def about(request):
     return render(request,"home/about.html")
 
+def search(request):
+    query=request.GET['query']
+    if len(query)>78:
+        allPosts = []
+    else:
+        allPosts=Post.objects.filter(title__icontains=query)
+    params={'allPosts':allPosts , 'query':query}
+    return render(request,"home/search.html",params)
+

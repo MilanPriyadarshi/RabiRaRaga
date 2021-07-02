@@ -14,6 +14,14 @@
   
     <link rel="stylesheet" href="{% static 'photo/fontawesome-free-5.9.0-web/css/all.css' %}">
     <link rel="stylesheet" href="{% static 'photo/TourPackages.css' %} ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
   <style>
     .navbar {
       font-family: 'Armata';
@@ -43,6 +51,49 @@
 }
 .text-dark {
     color: #000000!important;
+}
+#welcome{
+  font-family: 'Days One', sans-serif;
+}
+ #title{
+    font-family: 'Playfair Display', serif;
+  }
+  #desc{
+    font-family: 'Benne', serif;
+  }
+  wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing-demo {
+  width: 34ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: monospace;
+  font-size: 1.2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+#wel{
+  font-family: 'Frank Ruhl Libre', serif;
+}
+#author{
+  font-family: 'Cookie', cursive;
 }
 
   </style>
@@ -96,8 +147,8 @@
           </div>
         </li> -->
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <form method="get"action="/search" class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search For Title" aria-label="Search" name="query" id="query">
         <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
       </form>
     </div>
@@ -114,14 +165,14 @@
         <div  class="pt-6 pb-6 pt-lg-7 pb-lg-6">
             <div class="container">
                 <div  class="row justify-content-md-between">
-                    <div class="col-md-5 col-lg-4 d-flex flex-column justify-content-between"><h5 class="width="137"
+                    <div class="col-md-5 col-lg-4 d-flex flex-column justify-content-between"><h5 class="my-3"width="137"
                         height="42" class="mx-auto mx-md-0"
                         viewBox="0 0 701 217">ରବିରରାଗ</h5>
                         </svg>
                         <div class="mt-4 mb-3 mt-lg-5 pt-lg-2 mx-auto mx-md-0"><a href="https:\\www.facebook.com\RabiRaRaga"
                                 class="text-reset text-decoration-none" target="_blank"><svg width="15" height="15" class="mx-1"
                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                    <title>Milan Priyadarshi</title>
+                                    <title>RabiRaRaga</title>
                                     <path
                                         d="M18.14,7.17A.5.5,0,0,0,17.77,7H14V5.59c0-.28.06-.6.51-.6h3a.44.44,0,0,0,.35-.15A.5.5,0,0,0,18,4.5V.5a.5.5,0,0,0-.5-.5H13.17C8.37,0,8,4.1,8,5.35V7H5.5a.5.5,0,0,0-.5.5v4a.5.5,0,0,0,.5.5H8V23.5a.5.5,0,0,0,.5.5h5a.5.5,0,0,0,.5-.5V12h3.35a.5.5,0,0,0,.5-.45l.42-4A.5.5,0,0,0,18.14,7.17Z">
                                     </path>
@@ -132,13 +183,13 @@
                                         d="M23.32,6.44a.5.5,0,0,0-.2-.87l-.79-.2A.5.5,0,0,1,22,4.67l.44-.89a.5.5,0,0,0-.58-.7l-2,.56a.5.5,0,0,1-.44-.08,5,5,0,0,0-3-1,5,5,0,0,0-5,5v.36a.25.25,0,0,1-.22.25c-2.81.33-5.5-1.1-8.4-4.44a.51.51,0,0,0-.51-.15A.5.5,0,0,0,2,4a7.58,7.58,0,0,0,.46,4.92.25.25,0,0,1-.26.36L1.08,9.06a.5.5,0,0,0-.57.59,5.15,5.15,0,0,0,2.37,3.78.25.25,0,0,1,0,.45l-.53.21a.5.5,0,0,0-.26.69,4.36,4.36,0,0,0,3.2,2.48.25.25,0,0,1,0,.47A10.94,10.94,0,0,1,1,18.56a.5.5,0,0,0-.2,1,20.06,20.06,0,0,0,8.14,1.93,12.58,12.58,0,0,0,7-2A12.5,12.5,0,0,0,21.5,9.06V8.19a.5.5,0,0,1,.18-.38Z">
                                     </path>
                                 </svg> </a><a href="https:\\www.instagram.com\rabiraraga" target="_blank" class="text-white text-decoration-none"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" class="mx-1" viewBox="0 0 24 24">
-                                <title>Milan Priyadarshi</title>
+                                <title>RabiRaRaga</title>
                                 <path d="M11.984 16.815c2.596 0 4.706-2.111 4.706-4.707 0-1.409-.623-2.674-1.606-3.538-.346-.303-.735-.556-1.158-.748-.593-.27-1.249-.421-1.941-.421s-1.349.151-1.941.421c-.424.194-.814.447-1.158.749-.985.864-1.608 2.129-1.608 3.538 0 2.595 2.112 4.706 4.706 4.706zm.016-8.184c1.921 0 3.479 1.557 3.479 3.478 0 1.921-1.558 3.479-3.479 3.479s-3.479-1.557-3.479-3.479c0-1.921 1.558-3.478 3.479-3.478zm5.223.369h6.777v10.278c0 2.608-2.114 4.722-4.722 4.722h-14.493c-2.608 0-4.785-2.114-4.785-4.722v-10.278h6.747c-.544.913-.872 1.969-.872 3.109 0 3.374 2.735 6.109 6.109 6.109s6.109-2.735 6.109-6.109c.001-1.14-.327-2.196-.87-3.109zm2.055-9h-12.278v5h-1v-5h-1v5h-1v-4.923c-.346.057-.682.143-1 .27v4.653h-1v-4.102c-1.202.857-2 2.246-2 3.824v3.278h7.473c1.167-1.282 2.798-2 4.511-2 1.722 0 3.351.725 4.511 2h7.505v-3.278c0-2.608-2.114-4.722-4.722-4.722zm2.722 5.265c0 .406-.333.735-.745.735h-2.511c-.411 0-.744-.329-.744-.735v-2.53c0-.406.333-.735.744-.735h2.511c.412 0 .745.329.745.735v2.53z"/></svg> </a></div>
                     </div>
                     <div class="col-md-7 col-lg-6 mt-5 mt-md-0">
                         <div class="row">
                             <div class="col-6 col-md-4 mb-4 mb-md-0">
-                                <h3 class="h6 text-uppercase mb-3">Updates about</h3>
+                                <h3 class="h6 text-uppercase my-3 mb-3">Updates about</h3>
                                 <ul class="list-unstyled">
                                     <li class="mb-1"><a href="/blog" class="text-reset">Latest Releases</a></li>
                                     <li class="mb-1"><a href="/blog" class="text-reset">Facts</a></li>

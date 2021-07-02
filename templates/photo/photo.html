@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 {% block title %}ରବିରରାଗ-Photos
 {% endblock title %}
+</style>
 {% block body %}
 {% load static %}
-<body>
     <div class="container">
         <div class="row H_content">
             <div class="col-sm-12">
@@ -22,7 +22,7 @@
     <div class="container Service pt-4">
         <div class="row mt-5 mb-2">
     {% for photo in allPhoto %}
-            <div class="col-md-4">
+            <div class="col-md-4 my-2">
                 <div class="single-box mb-2">
                     <div class="box-img">
                       <img src="/media/{{photo.image}}" class="img-respons">
@@ -41,5 +41,6 @@
                 </div>
             </div>
             {% endfor %}
+</div>
     </div>
 {% endblock body %}
